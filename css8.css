@@ -1,0 +1,48 @@
+/* ブラウザがそれぞれ持っているCSSをリセットするための記述 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #6c6b6b;
+}
+
+.list-box {
+  margin: 0 auto; /* 真ん中にする */
+  width: 960px;
+  padding: 50px 0 0 0;
+}
+
+.list-number:nth-child(odd) {
+  background-color: #eee;
+}
+
+.list-number {
+  padding: 20px 0 20px 20px;
+}
+
+.color-item {
+  padding-top: 50px;
+  padding-bottom: 10px;
+  width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.color-box {
+  background-color: #ffd700;
+  width: 30%;
+  height: 200px;
+  margin-right: 5%;
+  margin-bottom: 40px;
+}
+
+.color-box:first-child,
+.color-box:nth-child(5),
+.color-box:last-child {
+  background-color: #ff8c00;
+}
+
+.color-box:nth-child(3n) {
+  margin-right: 0;
+}
